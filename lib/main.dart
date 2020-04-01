@@ -7,11 +7,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Bookangy_one',
+      title: 'Bookangy-one',
         theme: ThemeData(
         primarySwatch: Colors.green,
         scaffoldBackgroundColor: Color(0XFFCCCCCC)),
-    home: SplashScreen(),
+   home: SplashScreen(),
     routes: {
     '/home': (BuildContext context) => HomePage(),
     '/login': (BuildContext context) => LoginPage(),

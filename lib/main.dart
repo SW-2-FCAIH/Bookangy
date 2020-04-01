@@ -7,7 +7,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Bookangy',
+      title: 'Bookangy_one',
         theme: ThemeData(
         primarySwatch: Colors.green,
         scaffoldBackgroundColor: Color(0XFFCCCCCC)),

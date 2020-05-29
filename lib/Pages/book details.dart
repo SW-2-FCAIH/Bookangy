@@ -155,5 +155,76 @@ class BookDetails extends StatelessWidget {
     ),
     ),
     ),
+    Row(
+    mainAxisAlignment: MainAxisAlignment.center,
+    children: <Widget>[
+    ClipOval(
+    child: Material(
+    color: Colors.blue,
+    child: GestureDetector(
+    //  onTap: add,
+    child: SizedBox(
+    child: Icon(Icons.add),
+    height: 32,
+    width: 32,
     ),
+    ),
+    ),
+    ),
+    Text(
+    _quantity.toString(),
+    style: TextStyle(fontSize: 60),
+    ),
+    ClipOval(
+    child: Material(
+    color: Colors.red,
+    child: GestureDetector(
+    //      onTap: subtract,
+    child: SizedBox(
+    child: Icon(Icons.remove),
+    height: 32,
+    width: 32,
+    ),
+    ),
+    ),
+    ),
+    ],
+    ),
+      Row(
+        children: <Widget>[
+          ButtonTheme(
+            minWidth: MediaQuery.of(context).size.width,
+            height: MediaQuery.of(context).size.height * .12,
+            child: Builder(
+              builder: (context) => RaisedButton(
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.only(
+                        topRight: Radius.circular(20),
+                        topLeft: Radius.circular(20))),
+                color: Colors.deepPurple,
+                onPressed: () {
+                  addToCart(context, book);
+                },
+                child: Text(
+                  'Add to Cart'.toUpperCase(),
+                  style: TextStyle(
+                      fontSize: 18, fontWeight: FontWeight.bold),
+                ),
+              ),
+            ),
+          ),
+        ],
+      )
 
+
+
+
+
+
+
+      ],
+    ),
+    ),
+    ),
+    );
+  }

@@ -33,6 +33,7 @@ class AppDrawer extends StatelessWidget {
               },
             ),
             Divider(),
+            //Add book Page
             ListTile(
               leading: Icon(Icons.info, color: Theme.of(context).primaryColor),
               title: Text('Add Book',
@@ -43,6 +44,7 @@ class AppDrawer extends StatelessWidget {
             ),
 
             Divider(),
+            //About Page
             ListTile(
               leading: Icon(Icons.info, color: Theme.of(context).primaryColor),
               title: Text('About',
@@ -52,6 +54,7 @@ class AppDrawer extends StatelessWidget {
               },
             ),
             Divider(),
+            //Logout Page
             ListTile(
               leading:
                   Icon(Icons.arrow_back, color: Theme.of(context).primaryColor),

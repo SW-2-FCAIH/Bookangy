@@ -46,6 +46,7 @@ class BookDetails extends StatelessWidget {
                       ),
                     ),
                   ),
+                  /// padding aree 
                   Padding(
                     padding: const EdgeInsets.only(left: 260.1,top: 20),
                     child: Row(

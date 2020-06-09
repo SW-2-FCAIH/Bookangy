@@ -1,6 +1,7 @@
-
+/*import the package */ 
 import 'package:flutter/material.dart';
 
+/* identify the constants */ 
 
 const kSendButtonTextStyle = TextStyle(
   color: Colors.lightBlueAccent,
@@ -65,3 +66,5 @@ const kJackets = 'jackets';
 const kTrousers = 'trousers';
 const kTshirts = 't-shirts';
 const kShoes = 'shoes';
+
+/* end of constants identification */

@@ -32,3 +32,27 @@ class _DeveloperDetailsPageState extends State<DeveloperDetailsPage> {
         ],
       ),
     );
+
+    return Scaffold(
+      body: SingleChildScrollView(
+        child: Container(
+          decoration: linearGradient,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              DeveloperDetailHeader(
+                widget.developer,
+                avatarTag: widget.avatarTag,
+              ),
+              Padding(
+                padding: const EdgeInsets.all(24.0),
+                child: new DeveloperDetailBody(widget.developer),
+              ),
+              DeveloperShowcase(widget.developer),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
